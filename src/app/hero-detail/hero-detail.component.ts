@@ -3,7 +3,6 @@ import { Hero } from './hero';
 
 @Component({
   selector: 'hero-detail',
-  //templateUrl: './hero-detail.component.html',
     template: `
     <div *ngIf="hero">
       <h2>{{hero.name}} details!</h2>
@@ -13,18 +12,9 @@ import { Hero } from './hero';
         <input [(ngModel)]="hero.name" placeholder="name"/>
       </div>
     </div>
-  `
+  `,
   styleUrls: ['./hero-detail.component.css']
 })
-//export class HeroDetailComponent implements OnInit {
 export class HeroDetailComponent {
-
-@Input() hero: Hero;
-
-/*
-  constructor() { }
-
-  ngOnInit() {
-  }
-*/
+  @Input() hero: Hero;
 }

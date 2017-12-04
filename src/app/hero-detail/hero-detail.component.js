@@ -11,7 +11,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require("@angular/core");
 var hero_1 = require("./hero");
 var HeroDetailComponent = (function () {
-    //export class HeroDetailComponent implements OnInit {
     function HeroDetailComponent() {
     }
     return HeroDetailComponent;
@@ -23,7 +22,6 @@ __decorate([
 HeroDetailComponent = __decorate([
     core_1.Component({
         selector: 'hero-detail',
-        //templateUrl: './hero-detail.component.html',
         template: "\n    <div *ngIf=\"hero\">\n      <h2>{{hero.name}} details!</h2>\n      <div><label>id: </label>{{hero.id}}</div>\n      <div>\n        <label>name: </label>\n        <input [(ngModel)]=\"hero.name\" placeholder=\"name\"/>\n      </div>\n    </div>\n  ",
         styleUrls: ['./hero-detail.component.css']
     })
