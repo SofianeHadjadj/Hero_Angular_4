@@ -59,3 +59,43 @@ h4 {
     min-width: 60px;
   }
 }
+
+.Hulk{
+  background: url('../../assets/img/Hulk.jpg') center / cover;
+}
+.Wolverine{
+  background: url('../../assets/img/Wolverine.jpg') center / cover;
+}
+.Spiderman{
+  background: url('../../assets/img/Spiderman.jpg') center / cover;
+}
+.Thor{
+  background: url('../../assets/img/Thor.jpg') center / cover;
+}
+.Iron-Fist{
+  background: url('../../assets/img/Iron-Fist.jpg') center / cover;
+}
+.Magneto{
+  background: url('../../assets/img/Magneto.jpg') center / cover;
+}
+.Dr-Strange{
+  background: url('../../assets/img/Dr-Strange.jpg') center / cover;
+}
+.Deadpool{
+  background: url('../../assets/img/Deadpool.jpg') center / cover;
+}
+.Gambit{
+  background: url('../../assets/img/Gambit.jpg') center / cover;
+}
+.Groot{
+  background: url('../../assets/img/Groot.jpg') center / cover;
+}
+.titcard{
+  background-color: rgba(0,0,0,0.5);
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-align: left;
+  color: white;
+}

@@ -1,0 +1,28 @@
+#search-component{
+  display: block;
+  clear: both;
+  float: none;
+  color: #2E2E2E;
+}
+
+.search-result{
+  width:195px;
+  height: 16px;
+  padding: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+ 
+.search-result:hover {
+  color: #eee;
+  background-color: #01579b;
+}
+ 
+#search-box{
+  width: 200px;
+  height: 20px;
+}
+
+.mdl-textfield__input{
+  border-bottom: 1px solid #304ffe;
+}

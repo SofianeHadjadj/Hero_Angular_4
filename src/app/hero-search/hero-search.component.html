@@ -1,0 +1,16 @@
+<div id="search-component">
+  <h4>Hero Search</h4>
+
+
+	    <input class="mdl-textfield__input"  #searchBox id="search-box" (keyup)="search(searchBox.value)" placeholder="Hero name:" onkeyup="this.placeholder = ''" onblur="this.placeholder = 'Hero name:'" >
+	  
+
+  <div class="psr">
+    <div *ngFor="let hero of heroes | async"
+         (click)="gotoDetail(hero)" class="search-result  mdl-shadow--4dp" >
+      {{hero.name}}
+    </div>
+
+
+  </div>
+</div>

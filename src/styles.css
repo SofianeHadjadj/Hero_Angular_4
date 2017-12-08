@@ -6,6 +6,7 @@ html,body{
 body {
   font-family: 'roboto';
   margin: 2em;
+  background-color: #F8F8F8;
 }
 body, input[text], button {
   color: #888;

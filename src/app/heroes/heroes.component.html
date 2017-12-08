@@ -1,17 +1,33 @@
-<h2>My Heroes</h2>
+<h2 id="cas">My Heroes</h2>
 
 
 
-	<span style="display: block; width: 200px;" class="mdl-chip mdl-chip--contact lshe" *ngFor="let hero of heroes"
+	<form action="#">
+	  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+	    <input #heroName class="mdl-textfield__input" type="text" id="sample3"  placeholder="Hero name:" onkeyup="this.placeholder = ''" onblur="this.placeholder = 'Hero name:'" >
+	  </div>
+	  	<button (click)="add(heroName.value); heroName.value=''" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored addR">
+		  <i class="fa fa-plus" aria-hidden="true"></i>
+		</button>
+	</form>
+
+	<span class="mdl-chip mdl-chip--contact lshe" *ngFor="let hero of heroes"
     [class.selected]="hero === selectedHero"
     (click)="onSelect(hero)">
 	    <span class="mdl-chip__contact mdl-color--pink mdl-color-text--white">{{hero.id}}</span>
 	    <span class="mdl-chip__text">{{hero.name}}</span>
+	    <a (click)="delete(hero); $event.stopPropagation()" type="button" class="mdl-chip__action delcon"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+	    <div class="mdl-tooltip" data-mdl-for="cas">
+		Delete
+		</div>
 	</span>
 
 	<div *ngIf="selectedHero">
 	  <h2>
 	    {{selectedHero.name | uppercase}} is my hero
 	  </h2>
-	  <button (click)="gotoDetail()">View Details</button>
+	    <a (click)="gotoDetail()" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+	      View Details
+	    </a>
 	</div>
+

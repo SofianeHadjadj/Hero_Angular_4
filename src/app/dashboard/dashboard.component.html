@@ -1,8 +1,12 @@
 <h3>Top Heroes</h3>
 <div class="grid grid-pad">
-  <a *ngFor="let hero of heroes"  [routerLink]="['/detail', hero.id]"  class="col-1-4">
-    <div class="module hero mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
-      <h4>{{hero.name}}</h4>
-    </div>
-  </a>
+	<a *ngFor="let hero of heroes"  [routerLink]="['/detail', hero.id]"  class="col-1-4">
+		<div [ngClass]="hero.name" class="demo-card-wide mdl-card mdl-shadow--2dp">
+		    <h2 class="titcard">{{hero.name}}</h2>
+		</div>
+	</a>
+
+</div>
+<div class="grid grid-pad">
+<hero-search></hero-search>
 </div>

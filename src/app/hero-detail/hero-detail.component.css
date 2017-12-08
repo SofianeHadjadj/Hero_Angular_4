@@ -12,18 +12,74 @@ input {
 }
 button {
   margin-top: 20px;
-  font-family: Arial;
-  background-color: #eee;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 4px;
-  cursor: pointer; cursor: hand;
+
+  cursor: pointer; 
+  cursor: hand;
 }
-button:hover {
-  background-color: #cfd8dc;
+
+.demo-card-wide.mdl-card {
+  width: 400px;
 }
-button:disabled {
-  background-color: #eee;
-  color: #ccc; 
-  cursor: auto;
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 250px;
+}
+.Hulk{
+  background: url('../../assets/img/Hulk.jpg') center / cover;
+}
+.Wolverine{
+  background: url('../../assets/img/Wolverine.jpg') center / cover;
+}
+.Spiderman{
+  background: url('../../assets/img/Spiderman.jpg') center / cover;
+}
+.Thor{
+  background: url('../../assets/img/Thor.jpg') center / cover;
+}
+.Iron-Fist{
+  background: url('../../assets/img/Iron-Fist.jpg') center / cover;
+}
+.Magneto{
+  background: url('../../assets/img/Magneto.jpg') center / cover;
+}
+.Dr-Strange{
+  background: url('../../assets/img/Dr-Strange.jpg') center / cover;
+}
+.Deadpool{
+  background: url('../../assets/img/Deadpool.jpg') center / cover;
+}
+.Gambit{
+  background: url('../../assets/img/Gambit.jpg') center / cover;
+}
+.Groot{
+  background: url('../../assets/img/Groot.jpg') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+.mdl-card__title-text{
+  background-color: rgba(0,0,0,0.5);
+  /*padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;*/
+     width: 50px;
+    height: 50px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+
+}
+.mctt2{
+      margin: 0 auto;
+  width: 100px;  
+  line-height: 50px;
+}
+.mibu{
+  margin-left: 60px;
+  margin-top: -5px;
 }

@@ -2,11 +2,23 @@
 
   <h2>{{hero.name}} details!</h2>
 
-  <div><label>id: </label>{{hero.id}}</div>
-  <div>
-    <label>name: </label>
-    <input [(ngModel)]="hero.name" placeholder="name" />
-  </div>
-  <div><label>slogan:   </label>  {{hero.slogan}}</div>
-  <button (click)="goBack()">Back</button>
+	<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+	  <div [ngClass]="hero.name" class="mdl-card__title">
+	    <div class="mdl-card__title-text"><div class="mctt2">{{hero.id}}</div></div>
+	  </div>
+	  <div class="mdl-card__supporting-text">
+	    "{{hero.slogan}}"
+	  </div>
+	  <div class="mdl-card__actions mdl-card--border">
+		<input [(ngModel)]="hero.name" placeholder="name" />
+		<button (click)="save()" class="mibu mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored mdl-shadow--4dp">
+		  <i class="fa fa-floppy-o" aria-hidden="true"></i>
+		</button>
+	  </div>
+	</div>
+
+	<button (click)="goBack()" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp">
+	  <i class="fa fa-reply" aria-hidden="true"></i>
+	</button> 
+
 </div>
