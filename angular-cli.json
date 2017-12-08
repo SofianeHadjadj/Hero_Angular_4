@@ -20,9 +20,12 @@
       "prefix": "app",
       "styles": [
         "styles.css",
-        "../node_modules/roboto-fontface/css/roboto/roboto-fontface.css"
+        "node_modules/roboto-fontface/css/roboto/roboto-fontface.css",
+        "node_modules/material-design-lite/css/material.min.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "node_modules/material-design-lite/js/material.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

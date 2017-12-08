@@ -1,0 +1,17 @@
+<h2>My Heroes</h2>
+
+
+
+	<span style="display: block; width: 200px;" class="mdl-chip mdl-chip--contact lshe" *ngFor="let hero of heroes"
+    [class.selected]="hero === selectedHero"
+    (click)="onSelect(hero)">
+	    <span class="mdl-chip__contact mdl-color--pink mdl-color-text--white">{{hero.id}}</span>
+	    <span class="mdl-chip__text">{{hero.name}}</span>
+	</span>
+
+	<div *ngIf="selectedHero">
+	  <h2>
+	    {{selectedHero.name | uppercase}} is my hero
+	  </h2>
+	  <button (click)="gotoDetail()">View Details</button>
+	</div>
