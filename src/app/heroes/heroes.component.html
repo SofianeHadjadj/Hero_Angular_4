@@ -11,16 +11,18 @@
 		</button>
 	</form>
 
-	<span class="mdl-chip mdl-chip--contact lshe" *ngFor="let hero of heroes"
-    [class.selected]="hero === selectedHero"
-    (click)="onSelect(hero)">
-	    <span class="mdl-chip__contact mdl-color--pink mdl-color-text--white">{{hero.id}}</span>
-	    <span class="mdl-chip__text">{{hero.name}}</span>
-	    <a (click)="delete(hero); $event.stopPropagation()" type="button" class="mdl-chip__action delcon"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
-	    <div class="mdl-tooltip" data-mdl-for="cas">
-		Delete
-		</div>
-	</span>
+	<div id="contList">
+		<span class="mdl-chip mdl-chip--contact lshe" *ngFor="let hero of heroes"
+	    [class.selected]="hero === selectedHero"
+	    (click)="onSelect(hero)">
+		    <span class="mdl-chip__contact mdl-color--pink mdl-color-text--white">{{hero.id}}</span>
+		    <span class="mdl-chip__text">{{hero.name}}</span>
+		    <a (click)="delete(hero); $event.stopPropagation()" type="button" class="mdl-chip__action delcon"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+		    <div class="mdl-tooltip" data-mdl-for="cas">
+			Delete
+			</div>
+		</span>
+	</div>
 
 	<div *ngIf="selectedHero">
 	  <h2>
